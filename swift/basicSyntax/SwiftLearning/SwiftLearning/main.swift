@@ -8,6 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
+//print("Hello, World!")
 
-let lexical =  LexicalStructure()
+//let lexical =  LexicalStructure()
+
+let basicOperator: BasicOperator = BasicOperator()

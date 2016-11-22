@@ -11,10 +11,10 @@ import Cocoa
 class LexicalStructure: NSObject {
     override init() {
         super.init()
-        self.alias()
+        self.theBasics()
     }
     
-    func alias() -> Void {
+    func theBasics() -> Void {
         typealias string = String
         let name:string = "No Name"
         print("my name is \(name)")
