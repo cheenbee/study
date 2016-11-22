@@ -42,6 +42,45 @@ class BasicOperator: NSObject {
         var userDefinedColorName: String?
         var colorNameToUse = userDefinedColorName ?? defaultColorName
         print(colorNameToUse)
+        
+        userDefinedColorName = "green"
+        colorNameToUse = userDefinedColorName ?? defaultColorName
+        print(colorNameToUse)
+        
+        for index in 1...5 {
+            print("\(index) * 5 = \(index * 5)")
+        }
+        
+        for index in 6..<10 {
+            print("\(index) * 2 = \(index * 2)")
+        }
+        
+        let names = ["Anna", "Allen", "Alex", "Brain", "Jack", "Walker"]
+        for i in 0..<names.count {
+            print("第\(i + 1)个人的名字是: \(names[i])")
+        }
+        
+        let allowEntry = false
+        if !allowEntry {
+            print("ACCESS DENIED")
+        }
+        
+        let enterDoorCode = true
+        let passedRetinaScan = false
+        if enterDoorCode && passedRetinaScan {
+            print("Welcome!")
+        } else {
+            print("ACCESS DENIED")
+        }
+        
+        let knowsOverridePassword = true
+        let hasDoorKey = true
+        if (enterDoorCode && passedRetinaScan) || knowsOverridePassword || hasDoorKey {
+            print("Welcome!")
+        } else {
+            print("ACCeSS DENIED")
+        }
+        
     }
     
     func tupleTest() -> Void {
