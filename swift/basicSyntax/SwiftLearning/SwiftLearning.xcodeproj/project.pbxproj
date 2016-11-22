@@ -10,6 +10,7 @@
 		3488A98A1DE2FDB000348BCF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488A9891DE2FDB000348BCF /* main.swift */; };
 		3488A9921DE2FEE600348BCF /* LexicalStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488A9911DE2FEE600348BCF /* LexicalStructure.swift */; };
 		3488A9941DE3F62700348BCF /* BasicOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488A9931DE3F62700348BCF /* BasicOperator.swift */; };
+		74F208971DE495A300B472C8 /* Strings&Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F208961DE495A300B472C8 /* Strings&Characters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		3488A9891DE2FDB000348BCF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3488A9911DE2FEE600348BCF /* LexicalStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexicalStructure.swift; sourceTree = "<group>"; };
 		3488A9931DE3F62700348BCF /* BasicOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperator.swift; sourceTree = "<group>"; };
+		74F208961DE495A300B472C8 /* Strings&Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings&Characters.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				3488A9911DE2FEE600348BCF /* LexicalStructure.swift */,
 				3488A9931DE3F62700348BCF /* BasicOperator.swift */,
+				74F208961DE495A300B472C8 /* Strings&Characters.swift */,
 			);
 			path = syntax;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				3488A9921DE2FEE600348BCF /* LexicalStructure.swift in Sources */,
 				3488A9941DE3F62700348BCF /* BasicOperator.swift in Sources */,
 				3488A98A1DE2FDB000348BCF /* main.swift in Sources */,
+				74F208971DE495A300B472C8 /* Strings&Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +270,7 @@
 				3488A98F1DE2FDB000348BCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

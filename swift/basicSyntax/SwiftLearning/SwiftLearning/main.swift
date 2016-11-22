@@ -12,4 +12,6 @@ import Foundation
 
 //let lexical =  LexicalStructure()
 
-let basicOperator: BasicOperator = BasicOperator()
+//let basicOperator: BasicOperator = BasicOperator()
+
+let stringsCharacters = Strings_Characters()
