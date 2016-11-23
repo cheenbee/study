@@ -14,4 +14,6 @@ import Foundation
 
 //let basicOperator: BasicOperator = BasicOperator()
 
-let stringsCharacters = Strings_Characters()
+//let stringsCharacters = Strings_Characters()
+
+    let collectionType = CollectionTypes()
