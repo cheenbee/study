@@ -12,11 +12,11 @@ class CollectionTypes: NSObject {
     
     override init () {
         super.init()
-        
+        self.colloectionsDisplay()
     }
     
-    func <#name#>(<#parameters#>) -> <#return type#> {
-        <#function body#>
+    func colloectionsDisplay() -> Void {
+        
     }
     
 }
