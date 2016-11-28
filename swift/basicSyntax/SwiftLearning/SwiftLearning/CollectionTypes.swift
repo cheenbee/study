@@ -10,6 +10,13 @@ import Cocoa
 
 class CollectionTypes: NSObject {
     
+    override init () {
+        super.init()
+        
+    }
     
+    func <#name#>(<#parameters#>) -> <#return type#> {
+        <#function body#>
+    }
     
 }
