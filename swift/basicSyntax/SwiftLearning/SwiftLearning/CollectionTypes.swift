@@ -36,6 +36,26 @@ class CollectionTypes: NSObject {
         print("\(sixDoubles)")
         
         var shoppingList: [String] = ["Eggs", "Milk"]
+        // 集合可以使用 布尔属性 isEmpty 检查count是否为0
+        if shoppingList.isEmpty {
+            print("The shoppingList is Empty")
+        } else {
+            print("The shoppingList is not empty")
+        }
+        
+        shoppingList.append("Flour")
+        shoppingList += ["Baking Powder"]
+        shoppingList += ["Cheese", "Butter"]
+        print("\(shoppingList)")
+        
+        let firstItem = shoppingList[0]
+        print("The first item of shoppingList is \(firstItem)")
+        
+        shoppingList[0] = "Six Eggs"
+        print("shoppingList has \(shoppingList.count) itmes -- \(shoppingList)")
+        
+        shoppingList[3...5] = ["Bananas", "Apples"]
+        print("shoppingList has \(shoppingList.count) itmes -- \(shoppingList)")
         
     }
     
