@@ -57,6 +57,35 @@ class CollectionTypes: NSObject {
         shoppingList[3...5] = ["Bananas", "Apples"]
         print("shoppingList has \(shoppingList.count) itmes -- \(shoppingList)")
         
+        // set
+        var letters = Set<Character>()
+        letters.insert("a")
+        print("\(letters)")
+        
+        letters = []
+        print("\(letters)")
+        
+        var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip Hop"]
+        let favoriteMovies: Set = ["Comic"]
+        favoriteGenres.insert("Jazz")
+        if let removeGenre = favoriteGenres.remove("Rock") {
+            print("\(removeGenre)? I over it.")
+        } else {
+            print("I never much cared for that.")
+        }
+        
+        if favoriteMovies.contains("Comic") {
+            print("I love the comic")
+        }
+        
+        for genre in favoriteGenres {
+            print("\(genre)")
+        }
+        
+        let oddDigits: Set = [1, 3, 5, 7, 9]
+        let evenDigits: Set = [0, 2, 4, 6, 8]
+        print("\(oddDigits.union(evenDigits).sorted())")
+        
     }
     
 }
