@@ -16,4 +16,6 @@ import Foundation
 
 //let stringsCharacters = Strings_Characters()
 
-    let collectionType = CollectionTypes()
+//let collectionType = CollectionTypes()
+
+    let controlFlow = ControlFlow()
