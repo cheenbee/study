@@ -16,6 +16,7 @@ class CollectionTypes: NSObject {
     }
     
     func colloectionsDisplay() -> Void {
+        // Array
         var someInts = [Int]()
         someInts.append(3)
         someInts.append(5)
@@ -85,6 +86,30 @@ class CollectionTypes: NSObject {
         let oddDigits: Set = [1, 3, 5, 7, 9]
         let evenDigits: Set = [0, 2, 4, 6, 8]
         print("\(oddDigits.union(evenDigits).sorted())")
+        
+        let songNames: Set = ["give it away", "OtherSide", "OtherSide"]
+        print("songNames have \(songNames.count) items: \(songNames)")
+        
+        for name in songNames {
+            print("\(name)")
+        }
+        
+        // Dictionary
+        ///[200: "OK",
+         ///                             403: "Access forbidden",
+        ///                             404: "File not found",
+        ///                             500: "Internal server error"]
+        var httpResponse: Dictionary<Int , String> = [200: "OK",
+                                                      403: "forbidden",
+                                                      404: "File Not Found"]
+        httpResponse.updateValue("Internal Server error", forKey: 500)
+        
+        let httpCodes = [200, 403, 500]
+        for code in httpCodes {
+            if let response = httpResponse[code] {
+                print("\(code): \(response)")
+            }
+        }
         
     }
     
