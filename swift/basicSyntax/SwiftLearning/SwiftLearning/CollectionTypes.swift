@@ -95,14 +95,10 @@ class CollectionTypes: NSObject {
         }
         
         // Dictionary
-        ///[200: "OK",
-         ///                             403: "Access forbidden",
-        ///                             404: "File not found",
-        ///                             500: "Internal server error"]
         var httpResponse: Dictionary<Int , String> = [200: "OK",
-                                                      403: "forbidden",
                                                       404: "File Not Found"]
         httpResponse.updateValue("Internal Server error", forKey: 500)
+        httpResponse[403] = "forbidden"
         
         let httpCodes = [200, 403, 500]
         for code in httpCodes {
@@ -111,6 +107,57 @@ class CollectionTypes: NSObject {
             }
         }
         
+        var namesOfIntegers = [Int : String]()
+        namesOfIntegers[16] = "sixteen"
+        namesOfIntegers = [:]
+        
+        var aiports = ["YYZ": "Toronto Pearson",
+                       "DUB": "Dublin"]
+        print("The dictory of airports contains \(aiports.count) items")
+        
+        if aiports.isEmpty {
+            print("The airports dictionary is empty")
+        } else {
+            print("The airports dictionary is not empty")
+        }
+        
+        aiports["LHR"] = "London"
+        aiports["LHR"] = "London Heathrow"
+        if let oldValue = aiports.updateValue("Dublin Airport", forKey: "DUB") {
+            print("The old value for DUB was \(oldValue)")
+        }
+        
+        aiports["APL"] = "Apple Internation"
+        aiports.remove(at: aiports.index(forKey: "APL")!)
+        aiports.removeValue(forKey: "APL")
+        aiports["APL"] = nil;
+        
+        if let removeValue = aiports.removeValue(forKey: "DUB") {
+            print("The removed airport's name is \(removeValue)")
+        } else {
+            print("The airports dictiomary does not contain a value for DUB")
+        }
+        
+        for (airportCode, airportName) in aiports {
+            print("\(airportCode): \(airportName)")
+        }
+        
+        for airportCode in aiports.keys {
+            print("\(airportCode)")
+        }
+        
+        for airportName in aiports.values {
+            print("\(airportName)")
+        }
+        
+        let airportCodes = [String](aiports.keys)
+        print("\(airportCodes)")
+        
+        let airportNames = [String](aiports.values)
+        print("\(airportNames)")
+        
+        let sortedAirports = aiports.sorted(by: >)
+        print("the sorted airports is \(sortedAirports)")
     }
     
 }
