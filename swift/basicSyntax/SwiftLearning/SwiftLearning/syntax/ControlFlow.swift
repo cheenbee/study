@@ -15,6 +15,38 @@ class ControlFlow: NSObject {
     }
     
     func controlFlow() -> Void {
-        
+        self.forFlow()
     }
+    
+    func forFlow() -> Void {
+        for index in 1...5 {
+            print("\(index) times 5 is \(index * 5)")
+        }
+        
+        let base = 3
+        let power = 10
+        var answer = 1
+        for _ in 1...power {
+            answer *= base
+        }
+        print("\(base) to the power of \(power) is \(answer)")
+        
+        let names = ["Anna", "Alex", "Brain", "Jack"]
+        for name in names {
+            print("Hello, \(name)")
+        }
+        
+        let numberOflegs = ["Spider": 8, "Cat": 4]
+        for (animalName, legCount) in numberOflegs {
+            print("\(animalName)s have \(legCount) legs")
+        }
+        
+        /**
+        let http200Status = (200, "OK")
+        for item in http200Status {
+            print("\(item)")
+        }*/
+    }
+    
+    
 }
