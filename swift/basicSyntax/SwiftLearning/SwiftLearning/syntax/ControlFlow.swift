@@ -124,6 +124,39 @@ class ControlFlow: NSObject {
         default:
             print("(\(somepoint.0), \(somepoint.1)) is outside of the box")
         }
+        
+        let anotherPoint = (3, 0)
+        switch anotherPoint {
+        case (let x, 0):
+            print("on the x-axis with an x value of \(x)")
+        case (0, let y):
+            print("on the y-axis with a y value of \(y)")
+        case  (let x, let y):
+            print("somewhere else at (\(x), \(y)) ")
+            
+        }
+        
+        let yetAnotherpoint = (1, -1)
+        switch yetAnotherpoint {
+        case (let x, let y) where x == y:
+            print("(\(x), \(y)) is on the line x == y")
+        case(let x, let y) where x == -y:
+            print("(\(x), \(y)) is on the line x == -y")
+        case (let x, let y):
+            print("(\(x), \(y)) is just some arbitrary point")
+        }
+        
+        let someCharacter: Character = "e"
+        switch someCharacter {
+        case "a", "e", "i", "o", "u", "a":
+            print("\(someCharacter) is a vowel")
+        case "b", "c", "d", "f", "g":
+            print("")
+        default:
+            print("")
+        }
+        
+        
     }
     
     
