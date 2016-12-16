@@ -18,4 +18,6 @@ import Foundation
 
 //let collectionType = CollectionTypes()
 
-    let controlFlow = ControlFlow()
+//    let controlFlow = ControlFlow()
+
+    let fuctionsCalling = Functions()
