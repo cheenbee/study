@@ -30,6 +30,9 @@ class Functions: NSObject {
         
         someFunction(1, secondParameter: 2)
         someMethod(parameterWithoutDefault: 1, parameterWithDefault: 3)
+        
+        // average
+        print(arithmeticMean(1, 2, 3, 4, 5))
     }
     
     func greeting(personName:String) -> String {
@@ -91,5 +94,17 @@ class Functions: NSObject {
                     parameterWithDefault: Int = 2) {
         print("parameterWithDefault is \(parameterWithDefault)")
     }
+    
+    // variadic parameters
+    func arithmeticMean(_ numbers: Double...) -> Double {
+        var totoal: Double = 0
+        for number in numbers {
+            totoal += number
+        }
+        
+        return totoal / Double(numbers.count)
+    }
+    
+    // In-Out Parameters 形参默认是常量
     
 }
