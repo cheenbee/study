@@ -33,6 +33,14 @@ class Functions: NSObject {
         
         // average
         print(arithmeticMean(1, 2, 3, 4, 5))
+        
+        var a = 3
+        var b = 5
+        print("Before Swap a is \(a) b is \(b)")
+        swapTwoInts(&a, &b)
+        print("After  Swap a is \(a) b is \(b)")
+        
+        printMathResult(addTwoInts, a, b)
     }
     
     func greeting(personName:String) -> String {
@@ -106,5 +114,18 @@ class Functions: NSObject {
     }
     
     // In-Out Parameters 形参默认是常量
+    func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+        let temp = a
+        a = b
+        b = temp
+    }
+    
+    func addTwoInts(_ a: Int, _ b:Int) -> Int {
+        return a + b
+    }
+    
+    func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+        print("Result: \(mathFunction(a, b))")
+    }
     
 }
