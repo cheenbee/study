@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340A0DCD1ED2FE0500A508C1 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A0DCC1ED2FE0500A508C1 /* Closures.swift */; };
 		3488A98A1DE2FDB000348BCF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488A9891DE2FDB000348BCF /* main.swift */; };
 		3488A9921DE2FEE600348BCF /* LexicalStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488A9911DE2FEE600348BCF /* LexicalStructure.swift */; };
 		3488A9941DE3F62700348BCF /* BasicOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488A9931DE3F62700348BCF /* BasicOperator.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		340A0DCC1ED2FE0500A508C1 /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		3488A9861DE2FDB000348BCF /* SwiftLearning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftLearning; sourceTree = BUILT_PRODUCTS_DIR; };
 		3488A9891DE2FDB000348BCF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3488A9911DE2FEE600348BCF /* LexicalStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexicalStructure.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				74F208981DE5E7EF00B472C8 /* CollectionTypes.swift */,
 				74FB29A71DF700450056B144 /* ControlFlow.swift */,
 				34FB941A1E03C8F900C040F4 /* Functions.swift */,
+				340A0DCC1ED2FE0500A508C1 /* Closures.swift */,
 			);
 			path = syntax;
 			sourceTree = "<group>";
@@ -115,7 +118,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = none;
 				TargetAttributes = {
 					3488A9851DE2FDAF00348BCF = {
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3488A9921DE2FEE600348BCF /* LexicalStructure.swift in Sources */,
+				340A0DCD1ED2FE0500A508C1 /* Closures.swift in Sources */,
 				74FB29A81DF700450056B144 /* ControlFlow.swift in Sources */,
 				3488A9941DE3F62700348BCF /* BasicOperator.swift in Sources */,
 				34FB941B1E03C8F900C040F4 /* Functions.swift in Sources */,
@@ -177,6 +181,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -225,6 +230,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -244,6 +250,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
